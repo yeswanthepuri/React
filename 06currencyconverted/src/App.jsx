@@ -12,11 +12,7 @@ function App() {
 
   const currencyInfo = useCurrencyInformation(from)
   const options = Object.keys(currencyInfo)
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setCount(c => c + 1)
-  //   }, 1000)
-  // },[count]);
+
   const convert = () => {
     setConvertedAmount(amount * currencyInfo[to])
   };
